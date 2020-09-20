@@ -1,5 +1,0 @@
-mkdirs
-docker mongo db or maybe aws or all of em?
-python scraping script
-
-mongo db is > mongo.plants
