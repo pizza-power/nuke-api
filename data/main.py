@@ -17,7 +17,7 @@ import datetime
 # establish db connection
 
 try:
-    client = MongoClient('mongodb://192.168.1.191:32768/mongo')
+    client = MongoClient('mongodb://*PIHERE*/*PORTHERE*/mongo')
     print('connected to mongodb')
 except:
     print('errro connecting')
