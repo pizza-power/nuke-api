@@ -1,19 +1,20 @@
 const express = require('express'); 
 const mongoose = require('mongoose');
-const createError = require('http-errors');
-// const path = require('path');
-const cookieParser = require('cookie-parser');
-const logger = require('morgan');
 
 const plantRouter = require('./routes/PlantRoutes');
 
 const app = express(); 
 app.use(express.json()); // returns data as json
+app.disable('x-powered-by');
 
-mongoose.connect('mongodb://*IPHERE*:*PORTHERE*/mongo', {
+const mongoIP = process.env.MONGO_IP
+const mongoPORT = process.env.MONGO_PORT
+
+mongoose.connect('mongodb://' + mongoIP + ':' + mongoPORT + '/mongo', {
   useNewUrlParser: true,  useUnifiedTopology: true 
 });
 
 app.use(plantRouter); 
 
-app.listen(3333, () => { console.log('Server is running on port 3333')});
+const PORT = process.env.NODE_PORT || 3333; 
+app.listen(PORT, () => { console.log(`Server is running on port ${PORT}`)});
