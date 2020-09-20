@@ -10,7 +10,7 @@ const plantRouter = require('./routes/PlantRoutes');
 const app = express(); 
 app.use(express.json()); // returns data as json
 
-mongoose.connect('mongodb://192.168.1.191:32768/mongo', {
+mongoose.connect('mongodb://*IPHERE*:*PORTHERE*/mongo', {
   useNewUrlParser: true,  useUnifiedTopology: true 
 });
 
