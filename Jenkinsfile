@@ -1,12 +1,12 @@
 pipeline {
   agent {
-    dockerfile {
-      filename 'dockerfile'
+    node {
+      label 'nuke-api'
     }
 
   }
   stages {
-    stage('') {
+    stage('error') {
       steps {
         sh '''#!/bin/bash
 
