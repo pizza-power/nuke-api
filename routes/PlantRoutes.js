@@ -15,7 +15,6 @@ app.get('/nuke-api/v1/plants/all', async (req, res) => {
 // get data from a specific date
 app.get('/nuke-api/v1/plants/:date', async (req, res) => {
     let date = req.params.date;
-    console.log(date)
     const data = await plantModel.find({
         date: date
     })
