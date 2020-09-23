@@ -1,18 +1,15 @@
 pipeline {
-  agent {
-    node {
-      label 'nuke-api'
+    agent {
+        docker {
+            image 'node:6-alpine' 
+            args '-p 3333:3333' 
+        }
     }
-
-  }
-  stages {
-    stage('error') {
-      steps {
-        sh '''#!/bin/bash
-
-cp ./data/main.py /home/ubuntu//scripts/nuke-api-scraper/scraper.py'''
-      }
+    stages {
+        stage('Build') { 
+            steps {
+                sh 'npm install' 
+            }
+        }
     }
-
-  }
 }
