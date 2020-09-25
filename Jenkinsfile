@@ -12,14 +12,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'npm install'
-<<<<<<< HEAD
-		sh 'MONGO_IP=192.168.1.191 MONGO_PORT=32768 NODE_PORT=3333'
-=======
-                sh 'MONGO_IP=192.168.1.191 MONGO_PORT=32768 NODE_PORT=3333'
->>>>>>> 1dfda891ec4327f06651eacec7ba11262b082be6
-            }
-        }
-        stage('Deliver') { 
+	stage('Deliver') { 
             steps {
 		sh 'export $MONGO_IP=192.168.1.191'
 		sh 'export $MONGO_PORT=32768'
