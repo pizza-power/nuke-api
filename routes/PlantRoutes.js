@@ -59,8 +59,8 @@ app.get('/nuke-api/v1/plants/:name/:date', async (req, res) => {
 });
 
 // default route
-app.get('*',function (req, res) {
-        res.redirect('/nuke-api/v1/plants/all');
-});
+// app.get('*',function (req, res) {
+//         res.redirect('/nuke-api/v1/plants/all');
+// });
 
 module.exports = app;
