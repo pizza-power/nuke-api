@@ -2,6 +2,7 @@ const express = require('express');
 const plantModel = require('../models/PlantModel'); 
 const app = express(); 
 
+
 // get all data
 app.get('/nuke-api/v1/plants/all', async (req, res) => {
     const plants = await plantModel.find({})
@@ -55,6 +56,11 @@ app.get('/nuke-api/v1/plants/:name/:date', async (req, res) => {
     } catch (err) {
         res.status(500).send(err);
     }
+});
+
+// default route
+app.get('*',function (req, res) {
+        res.redirect('/nuke-api/v1/plants/all');
 });
 
 module.exports = app;
