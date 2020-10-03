@@ -11,7 +11,7 @@ API created with node/express/mongodb.
 Endpoints: 
 
 Get plant status by name via get request to: 
-/nuke-api/v1/plants/name/:name
+/plants/name/:name
 
 Example:
 
@@ -21,13 +21,14 @@ And it is case sensitive.
 
 Get plant status by date via get request to: 
 
-/nuke-api/v1/plants/:name/:date
+plants/:name/:date
 
 Example: Date in the form of 2020-09-19
 
 Get all plant date via get request to: 
 
-/nuke-api/v1/plants/all
+/plants/all
 
+See the live website here: https://nuke-api.com/
 
-MORE ENDPOINTS, DATA, CODE, AND DOCS coming soon. 
+More endpoints, data, code, and documentation coming soon. 
