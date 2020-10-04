@@ -8,6 +8,17 @@ app.get('/', function(req, res) {
     res.sendFile(path.resolve('index.html'));
 });
 
+// send examples
+app.get('/examples.html', function(req, res) {
+    res.sendFile(path.resolve('./documentation/examples.html'));
+});
+
+// send '/endpoints.html' index.html
+app.get('/endpoints.html', function(req, res) {
+    res.sendFile(path.resolve('./documentation/endpoints.html'));
+});
+
+
 // get all data
 app.get('/plants/all', async (req, res) => {
     const plants = await plantModel.find({})
