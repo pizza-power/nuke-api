@@ -17,6 +17,7 @@ require('dotenv').config();
 const app = express();
 app.use(express.json()); // returns data as json
 app.use(helmet());
+app.use(express.static(__dirname + '/public'));
 
 app.disable('x-powered-by');
 

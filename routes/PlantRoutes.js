@@ -9,13 +9,13 @@ app.get('/', function(req, res) {
 });
 
 // send examples
-app.get('/examples.html', function(req, res) {
-    res.sendFile(path.resolve('/documentation/examples.html'));
+app.get('/public/documentation/examples.html', function(req, res) {
+    res.sendFile(path.resolve('/public/documentation/examples.html'));
 });
 
 // send '/endpoints.html' index.html
-app.get('/endpoints.html', function(req, res) {
-    res.sendFile(path.resolve('/documentation/endpoints.html'));
+app.get('/public/documentation/endpoints.html', function(req, res) {
+    res.sendFile(path.resolve('/public/documentation/endpoints.html'));
 });
 
 
