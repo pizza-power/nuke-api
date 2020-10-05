@@ -6,15 +6,15 @@ const helmet = require('helmet');
 const path = require('path');
 
 // change as needed
-// const options = {
-//   key: fs.readFileSync("/etc/letsencrypt/live/www.nuke-api.com/privkey.pem"),
-//   cert: fs.readFileSync("/etc/letsencrypt/live/www.nuke-api.com/fullchain.pem")
-// };
-
 const options = {
-  key: fs.readFileSync("/home/user/data/programming/devcerts/server.key"),
-  cert: fs.readFileSync("/home/user/data/programming/devcerts/server.cert")
+  key: fs.readFileSync("/etc/letsencrypt/live/www.nuke-api.com/privkey.pem"),
+  cert: fs.readFileSync("/etc/letsencrypt/live/www.nuke-api.com/fullchain.pem")
 };
+
+// const options = {
+//   key: fs.readFileSync("/home/user/data/programming/devcerts/server.key"),
+//   cert: fs.readFileSync("/home/user/data/programming/devcerts/server.cert")
+// };
 
 require('dotenv').config();
 
