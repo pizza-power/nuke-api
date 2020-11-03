@@ -29,7 +29,7 @@ Get all plant date via get request to:
 
 /plants/all
 
-See the live website here: https://nuke-api.com/
+See the live website here: https://nuke-api.com/ (will be taken down soon or moved due to hosting costs on Azure)
 
 More endpoints, data, code, and documentation coming soon. 
 
