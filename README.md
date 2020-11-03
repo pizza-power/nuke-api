@@ -34,6 +34,6 @@ See the live website here: https://nuke-api.com/
 More endpoints, data, code, and documentation coming soon. 
 
 Screenshots:
-![alt text](https://github.com/pizza-power/nuke-api/blob/master/nuke1.png?raw=true)
+![alt text](https://github.com/pizza-power/nuke-api/blob/master/images/nuke1.png?raw=true)
 
-![alt text](https://github.com/pizza-power/nuke-api/blob/master/nuke2.png?raw=true)
+![alt text](https://github.com/pizza-power/nuke-api/blob/master/images/nuke2.png?raw=true)
